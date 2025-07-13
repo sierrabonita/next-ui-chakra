@@ -45,3 +45,7 @@ Thumbs.db
 
 # VSCode settings
 .vscode/
+
+# storybook
+*storybook.log
+storybook-static
