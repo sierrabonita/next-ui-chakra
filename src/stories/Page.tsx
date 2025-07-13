@@ -40,6 +40,7 @@ export const Page: React.FC = () => {
         <ul>
           <li>
             Use a higher-level connected component. Storybook helps you compose
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             such data from the "args" of child component stories
           </li>
           <li>
