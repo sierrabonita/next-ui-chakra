@@ -1,13 +1,60 @@
 'use client'
 
-import { Box, Heading, Text, Button } from '@chakra-ui/react'
+import { Box, Button, Flex, Input, Heading } from '@chakra-ui/react'
+import { FormControl, FormLabel } from '@chakra-ui/form-control'
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
-    <Box p={8}>
-      <Heading mb={4}>Hello, Chakra UI with App Router</Heading>
-      <Text mb={4}>このアプリは App Router + Chakra UI です。</Text>
-      <Button colorScheme="teal">ボタン</Button>
-    </Box>
+    <Flex
+      minH="100vh"
+      align="center"
+      justify="center"
+    >
+      <Box
+        p={8}
+        rounded="xl"
+        shadow="lg"
+        w="full"
+        maxW="md"
+      >
+        <Heading
+          mb={6}
+          size="lg"
+          textAlign="center"
+        >
+          ログイン
+        </Heading>
+
+        <FormControl
+          id="email"
+          mb={4}
+        >
+          <FormLabel>メールアドレス</FormLabel>
+          <Input
+            type="email"
+            placeholder="you@example.com"
+          />
+        </FormControl>
+
+        <FormControl
+          id="password"
+          mb={6}
+        >
+          <FormLabel>パスワード</FormLabel>
+          <Input
+            type="password"
+            placeholder="●●●●●●"
+          />
+        </FormControl>
+
+        <Button
+          colorScheme="blue"
+          size="md"
+          w="full"
+        >
+          ログイン
+        </Button>
+      </Box>
+    </Flex>
   )
 }
