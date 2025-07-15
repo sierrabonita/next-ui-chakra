@@ -1,7 +1,14 @@
 'use client'
 
-import { Box, Button, Flex, Input, Heading } from '@chakra-ui/react'
-import { FormControl, FormLabel } from '@chakra-ui/form-control'
+import {
+  Button,
+  Box,
+  Field,
+  Fieldset,
+  Flex,
+  Input,
+  VStack,
+} from '@chakra-ui/react'
 
 export default function LoginPage() {
   return (
@@ -17,43 +24,39 @@ export default function LoginPage() {
         w="full"
         maxW="md"
       >
-        <Heading
-          mb={6}
+        <Fieldset.Root
           size="lg"
-          textAlign="center"
+          maxW="md"
         >
-          ログイン
-        </Heading>
+          <VStack align={'flex-start'}>
+            <Fieldset.Legend>ログイン</Fieldset.Legend>
+            <Fieldset.HelperText>
+              メールアドレスとパスワードを設定してください
+            </Fieldset.HelperText>
+          </VStack>
 
-        <FormControl
-          id="email"
-          mb={4}
-        >
-          <FormLabel>メールアドレス</FormLabel>
-          <Input
-            type="email"
-            placeholder="you@example.com"
-          />
-        </FormControl>
+          <Fieldset.Content>
+            <Field.Root>
+              <Field.Label>メールアドレス</Field.Label>
+              <Input
+                name="email"
+                type="email"
+              />
+            </Field.Root>
 
-        <FormControl
-          id="password"
-          mb={6}
-        >
-          <FormLabel>パスワード</FormLabel>
-          <Input
-            type="password"
-            placeholder="●●●●●●"
-          />
-        </FormControl>
+            <Field.Root>
+              <Field.Label>パスワード</Field.Label>
+              <Input name="password" />
+            </Field.Root>
+          </Fieldset.Content>
 
-        <Button
-          colorScheme="blue"
-          size="md"
-          w="full"
-        >
-          ログイン
-        </Button>
+          <Button
+            type="submit"
+            alignSelf={'center'}
+          >
+            ログイン
+          </Button>
+        </Fieldset.Root>
       </Box>
     </Flex>
   )
