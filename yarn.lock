@@ -305,65 +305,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/form-control@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@chakra-ui/form-control@npm:2.2.0"
-  dependencies:
-    "@chakra-ui/icon": "npm:3.2.0"
-    "@chakra-ui/react-context": "npm:2.1.0"
-    "@chakra-ui/react-types": "npm:2.0.7"
-    "@chakra-ui/react-use-merge-refs": "npm:2.1.0"
-    "@chakra-ui/shared-utils": "npm:2.0.5"
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 10c0/2afa35b6b67c152289f6a77f6118d03847cd9b29fa61c8e2cbe9c173d2521a195ce81f0cef1eadcb5f62e39687161753b5a409cfd7e46b2330516249ef65dc60
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/icon@npm:3.2.0":
-  version: 3.2.0
-  resolution: "@chakra-ui/icon@npm:3.2.0"
-  dependencies:
-    "@chakra-ui/shared-utils": "npm:2.0.5"
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 10c0/0bd5c4b2dafc0adef1c5ffe9a137556a81b7f6f724c406d49740bea34153ba8ce6d8c9eaffa697a3d564d7df7b226cd59a8f0c103853f874543466c2816643b1
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/object-utils@npm:2.1.0":
   version: 2.1.0
   resolution: "@chakra-ui/object-utils@npm:2.1.0"
   checksum: 10c0/581350502ae80b5fbb9ed7443002168c5cc685dc291fc0ace0946443041e5ac8835141c265da4e2c547e3795b7eea6b362d1dd03447187665791de8cdf2c746f
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/react-context@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@chakra-ui/react-context@npm:2.1.0"
-  peerDependencies:
-    react: ">=18"
-  checksum: 10c0/a2e7b5ccf3ea2316ee2537641c5bff5ef0a48a3717f3daaa749eccdc96751423db184747c489c876ca1ce8e0a31881c4690214d913c638f3d0fc89cd2b87612b
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/react-types@npm:2.0.7":
-  version: 2.0.7
-  resolution: "@chakra-ui/react-types@npm:2.0.7"
-  peerDependencies:
-    react: ">=18"
-  checksum: 10c0/af77ea9c169ff7f3226f8fa54c006c844c40415e844de47fe3c4675d8fb31072e44fb66d3de78977ddd9a19cddeecf5c2f9d5289e603e81a1f71659ad62a0f49
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/react-use-merge-refs@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@chakra-ui/react-use-merge-refs@npm:2.1.0"
-  peerDependencies:
-    react: ">=18"
-  checksum: 10c0/2da9b877145c0bd426fd0cef3b46051f8f1f4d1e0f2d0feb1dd68ac40ac6a3899e71abf04440d3a7067fb64d637c17241c98fafd0bd78b22f0d8850cad08c567
   languageName: node
   linkType: hard
 
@@ -7341,7 +7286,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-ui-chakra@workspace:."
   dependencies:
-    "@chakra-ui/form-control": "npm:^2.2.0"
     "@chakra-ui/react": "npm:3.22.0"
     "@chakra-ui/system": "npm:^2.6.2"
     "@chromatic-com/storybook": "npm:^4.0.1"
