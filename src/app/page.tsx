@@ -46,7 +46,10 @@ export default function LoginPage() {
 
             <Field.Root>
               <Field.Label>パスワード</Field.Label>
-              <Input name="password" />
+              <Input
+                name="password"
+                type="password"
+              />
             </Field.Root>
           </Fieldset.Content>
 
