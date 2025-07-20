@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Providers } from '@/app/providers'
 
 export const metadata: Metadata = {
-  title: 'My Chakra App',
+  title: 'next-chakra-ui',
   description: 'Next.js + Chakra UI',
 }
 
